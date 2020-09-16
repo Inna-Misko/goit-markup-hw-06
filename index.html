@@ -416,6 +416,19 @@
               </li>
             </ul>
         </div>
+        <div class="subscription flex-box">
+          <form action="#" method="post">
+            <label class="sub-title" for="mail">Подпишитесь на рассылку</label>
+            <input class="sub-input" type="email" name="user-mail" id="mail" placeholder="E-mail">
+            <button class="sub-btn" type="submit">Подписаться
+              <svg class="icon_send">
+                <use herf="./img/symbol-defs.svg#icon_send"></use>
+              </svg>
+            </button>
+            
+          </form>
+        
+        </div>
         </div>
       </div>
     </footer>
@@ -423,9 +436,19 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
           <button class="elips" data-modal-close>
-            <img src="./img/close-btn.svg" alt="close" width="18">
+            <svg class="close-btn">
+              <use href="./img/symbol-defs.svg#vector"></use>
+            </svg>
           </button>
-        </div>
+        <p>Оставьте свои данные, мы вам перезвоним</p>
+        <form action="#" method="POST" >
+          <label for="name">Имя</label>
+          <input type="text" name="user-name" id="name">
+          <label for="tell">Телефон</label>
+          <input type="tel" name="telephone" id="tell">
+          <label for="mail">Почта</label>
+          <input type="e-mail" name="mail" id="mail">
+        </form>
       </div>
     </div>
 
