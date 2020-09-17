@@ -685,14 +685,10 @@ a {
   position: relative;
   width: 200px;
   height: 50px;
-  /* padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 29px;
-  padding-right: 62px; */
+  padding: 10px 29px;
   margin-left: 12px;
 
   font-family: Roboto;
-  font-style: 400;
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
@@ -705,11 +701,15 @@ a {
   color: var(--white);
 }
 
-.icon_send {
+.icon-send {
   position: absolute;
-  fill: var(--white);
-  width: 24px;
-  height: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.sub-btn-text {
+  margin-left: -9px;
+  margin-right: 10px;
 }
 
 .sub-input {
@@ -722,7 +722,12 @@ a {
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  background-color: var(--bg-footer-color);
+  background-color: transparent;
+}
+
+.sub-input:focus {
+  outline: none;
+  color: var(--main-color);
 }
 
 /* Backdrop */
@@ -753,12 +758,13 @@ a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop-title {
   margin: 0px;
   margin-bottom: 12px;
-  font-family: Roboto;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -782,14 +788,18 @@ a {
   width: 11px;
   height: 11px;
   fill: var(--black);
+
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .elips:focus {
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  outline: none;
 }
 
-.close-btn:focus {
+.close-btn:focus,
+.close-btn:hover {
   fill: var(--accent-color);
+  outline: none;
 }
 
 .backdrop.is-hidden {
@@ -893,9 +903,6 @@ textarea:focus {
   font-family: Roboto;
   text-decoration: underline;
   color: var(--accent-color);
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -904,7 +911,6 @@ textarea:focus {
 .button {
   display: block;
   margin: auto;
-
   margin-top: 30px;
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -915,7 +921,7 @@ textarea:focus {
   width: 200px;
   height: 50px;
 
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
