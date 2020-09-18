@@ -727,7 +727,7 @@ a {
 
 .sub-input:focus {
   outline: none;
-  color: var(--main-color);
+  color: var(--white);
 }
 
 /* Backdrop */
