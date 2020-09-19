@@ -309,11 +309,9 @@ a {
 
 .text-block {
   margin: 0px;
-  font-style: normal;
-  font-weight: 400px;
   color: var(--white);
   font-size: 18px;
-  line-height: 1.5em;
+  line-height: 1.5;
   letter-spacing: 0.03em;
 }
 
@@ -380,7 +378,7 @@ a {
   margin-bottom: 20px;
 
   font-family: Roboto;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
@@ -430,14 +428,11 @@ a {
   display: block;
   margin-left: 93px;
   margin-bottom: 20px;
-  font-family: Roboto;
-  font-style: 400;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
   color: #ffffff;
 }
 
@@ -448,7 +443,6 @@ a {
   padding: 10px 29px;
   margin-left: 12px;
 
-  font-family: Roboto;
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
